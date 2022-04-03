@@ -1,19 +1,24 @@
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+  }
+
 body {
     margin: auto;
 }
 
 a {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
     padding: 1px 15px;
-    color:  #667085;
+    color:  var(--text-color);
 }
 
-header > section {
+#nav {
     display: grid;
     grid-template-columns:25% 50% 15%;
     height: 80px;
@@ -23,9 +28,9 @@ header > section {
 
 .header-links,
 .header-sub {
-    margin: 1.2em 0%;
+    margin: 1.6em 0%;
     align-content: center;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     justify-items: start;
 }
@@ -52,12 +57,75 @@ header > section {
 }
 
 .cadastrar-bottom {
-    background: #8E2424;
-    border: 1px solid #8E2424;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
     box-sizing: border-box;
     color: #fff;
     padding: 10px;
     /* Shadow/xs */
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
     border-radius: 8px;
+}
+
+#landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 0px;
+}
+
+span, h1, p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+span {
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+    color: var(--main-color);
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+    color: #101828;
+
+}
+
+p {
+    width: 791px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color:  var(--text-color)
+}
+
+.metricas-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    padding: 0px 150px 96px;
+}
+
+.metricas-number {
+    font-size: 60px;
+}
+
+.metricas-size {
+    font-size: 18px
+}
+
+.metricas-text {
+    font-size: 16px;
+    width: 280px;
+    text-align: inherit;
+    line-height: normal;
+    margin: -25px 0px;
 }
