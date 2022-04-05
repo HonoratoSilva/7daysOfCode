@@ -1,6 +1,7 @@
 :root {
     --text-color: #667085;
     --main-color: #8E2424;
+    --secondary-color: #101828;
   }
 
 body {
@@ -95,7 +96,7 @@ h1 {
     font-size: 48px;
     line-height: 60px;
     letter-spacing: -0.02em;
-    color: #101828;
+    color: var(--secondary-color);
 }
 
 p {
@@ -138,7 +139,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 96px 0px;
+    padding: 96px 0px 0px 0px;
 }
 
 #job-section > span {
@@ -164,4 +165,42 @@ p {
     position: relative;
     width: 80%;
     height: 40%;
+}
+
+h4 {
+    margin: 30px 20% 10px;
+    padding: 40px 0px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.vaga {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 24px 28px;
+    margin: 30px 20%;
+    border: 1px solid #EAECF0;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.titulo-vaga {
+    font-weight: 500;
+    font-size: 18px;
+    margin: 8px 0px 20px;
+    color: var(--secondary-color);
+}
+
+.informacoes {
+    display: flex;
+    font-size: 16px;
+    margin: 20px 0px 8px;
+}
+
+.informacoes > span {
+    margin-right: 2.4rem;
+    font-weight: 500;
+    color:  var(--text-color);
 }
